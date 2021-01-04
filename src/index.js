@@ -8,7 +8,7 @@ const MediaCard = ({ title, body, imageUrl }) => {
   return <div>
     <h2>{title}</h2>
     <p>{body}</p>
-    <img className="react-image" src={imageUrl} />
+    {/* <img className="react-image" src={imageUrl} /> */}
     <Gate isOpen={false} />
   </div>
 }
