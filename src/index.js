@@ -4,16 +4,16 @@ import Gate from './Gate';
 import './index.css';
 
 
-const MediaCard = ({ title, body, imageUrl }) => {
+const MediaCard = ({ title, body, imageUrl, altText }) => {
   return <div>
     <h2>{title}</h2>
     <p>{body}</p>
-    <img src={imageUrl} />
+    <img src={imageUrl} alt={altText} />
     <Gate isOpen={false} />
   </div>
 }
 
-ReactDom.render(<MediaCard title="Basic React App Title." body="This is the body of this MediaCard component" imageUrl="https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg" />, document.getElementById('root'));
+ReactDom.render(<MediaCard title="Basic React App Title." body="This is the body of this MediaCard component" imageUrl="https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg" altText="here is an image" />, document.getElementById('root'));
 
 
 
